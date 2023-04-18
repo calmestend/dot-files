@@ -1,0 +1,35 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+}
+
+#workspaces button,
+#custom-spotify,
+#pulseaudio,
+#clock {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 5px 2px 2px 5px;
+}
+
+.modules-right,
+.modules-left,
+.modules-center {
+  padding: 5px;
+  margin: 5px;
+}
+
+#workspaces button {
+  opacity: 0.5;
+}
+#workspaces button:hover {
+  transition: 0.2s all ease;
+  opacity: 0.8;
+}
+
+#workspaces button.active {
+  transition: 0.3s all ease;
+  opacity: 1;
+}
