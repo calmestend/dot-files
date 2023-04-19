@@ -1,0 +1,1 @@
+swaybg -i ~/.config/wallpapers/anime_anime_girls_Neon_Genesis_Evangelion_Ayanami_Rei_bodysuit_eyepatches_cross_long_hair-2169107.png
