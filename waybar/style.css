@@ -1,8 +1,6 @@
-
 * {
+  font-family: JetBrainsMono Nerd Font;
   border: none;
-  border-radius: 0;
-  font-family: JetbrainsMono Nerd Font, Light;
   font-size: 16px;
   box-shadow: none;
   text-shadow: none;
@@ -30,18 +28,17 @@ window#waybar.solo {
 .modules-right {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 0px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  border-radius: 10px;
-  color: #eae9f0;
+  color: #fff;
   background-color: unset;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 5px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #eae9f0;
+  color: #fff;
   opacity: 1;
   margin: 10px;
   margin-bottom: 5px;
@@ -56,9 +53,8 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
   min-height: 45px;
   font-size: 16px;
   margin-bottom: 0px;
-  border-radius: 10px;
   transition: none;
-  color: #eae9f0;
+  color: #fff;
   margin-bottom: 0px;
 }
 
@@ -66,17 +62,16 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
   min-width: 40px;
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 0px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  border-radius: 10px;
-  color: #eae9f0;
+  color: #fff;
   background-color: unset;
   opacity: 0.7;
 }
 
 #workspaces button:hover {
-  box-shadow: #eae9f0 0px 5px 0px 0px;
+  box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
@@ -84,18 +79,17 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
 #workspaces button.active {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 0px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  border-radius: 10px;
-  color: #eae9f0;
+  color: #fff;
   background-color: unset;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 5px 0px 0px;
+  border: 2px solid #fff;
+  box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #eae9f0;
+  color: #fff;
   opacity: 1;
 }
 
@@ -103,7 +97,7 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
   transition: 0.04s all ease;
   margin-top: 2px;
   margin-bottom: 3px;
-  box-shadow: #eae9f0 0px 3px 0px 0px;
+  box-shadow: #fff 0px 3px 0px 0px;
 }
 
 /* #workspaces button.occupied {
@@ -162,27 +156,27 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
 }
 
 #battery.warning {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #battery.critical {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #battery.charging {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #custom-storage.warning {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #custom-storage.critical {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #apatheia {
-  color: #eae9f0;
+  color: #fff;
 }
 
 #backlight {
@@ -192,18 +186,17 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
 #custom-spotify {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 0px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  border-radius: 10px;
-  color: #eae9f0;
+  color: #fff;
   background-color: unset;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 5px 0px 0px;
+  border: 2px solid #fff;
+  box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #eae9f0;
+  color: #fff;
   opacity: 1;
   padding-right: 15px;
 }
@@ -211,18 +204,17 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
 #custom-appname {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 0px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  border-radius: 10px;
-  color: #eae9f0;
+  color: #fff;
   background-color: unset;
-  border: 2px solid #eae9f0;
-  box-shadow: #eae9f0 0px 5px 0px 0px;
+  border: 1px solid #fff;
+  box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #eae9f0;
+  color: #fff;
   opacity: 1;
 }
 
@@ -230,6 +222,5 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
   font-size: 5px;
   padding: 0px 10px;
   padding-right: 1px;
-  border-radius: 5px 0px 0px 5px;
   background-color: rgba(17, 17, 27, 0);
 }
