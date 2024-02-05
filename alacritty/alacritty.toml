@@ -1,0 +1,26 @@
+import = ["/home/barac/.config/alacritty/colors.toml", "/home/barac/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+
+[bell]
+animation = "EaseOutCubic"
+
+[cursor]
+unfocused_hollow = true 
+style = { blinking = "On", shape = "Block" }
+thickness = 0.25
+
+[env]
+EDITOR = "helix"
+
+[window]
+opacity = 1
+dynamic_padding = true
+padding = { x = 24, y = 28 }
+
+[scrolling]
+history = 1000
+multiplier = 3
+
+[shell]
+program = "/bin/tmux"

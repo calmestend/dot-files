@@ -8,10 +8,19 @@
   "height": 0,
   "modules-left": [
     "hyprland/workspaces"
-  // "hyprland/window",
+    // "hyprland/window",
   ],
-  "modules-center": ["custom/spotify"],
-  "modules-right": ["tray", "pulseaudio", "network","battery","backlight","clock"],
+  "modules-center": [
+    "custom/spotify"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "battery",
+    "backlight",
+    "clock"
+  ],
   "hyprland/window": {
     "format": "{}",
     "max-length": 50
@@ -48,42 +57,50 @@
     "format": "{:| %R | %A %d %B %Y }",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-    "pulseaudio": {
-        //"scroll-step": 1,
-        "format": " {icon} {volume}% ",
-        "format-muted": " ",
-        "format-icons": {
-            "default": [" ", " "]
-        },
-        "on-click": "pavucontrol"
+  "pulseaudio": {
+    //"scroll-step": 1,
+    "format": " {icon} {volume}% ",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [
+        " ",
+        " "
+      ]
+    },
+    "on-click": "pavucontrol"
   },
-      "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    },
-
-	"network": {
-		"tooltip": false,
-		"format-wifi": " ",
-		"format-ethernet": ""
-	},
-	"backlight": {
-		"tooltip": false,
-		"format": " {}%",
-		"interval":1,
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "network": {
+    "tooltip": false,
+    "format-wifi": " ",
+    "format-ethernet": ""
+  },
+  "backlight": {
+    "tooltip": false,
+    "format": " {}%",
+    "interval": 1,
     "on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
-	},
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
+    "on-scroll-down": "light -U 5"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ]
+  },
 }

@@ -1,7 +1,7 @@
 * {
-  font-family: JetBrainsMono Nerd Font, Light;
+  font-family: IosevkaLyteTerm Nerd Font;
   border-radius: 0;
-  font-size: 16px;
+  font-size: 18px;
   box-shadow: none;
   text-shadow: none;
   transition-duration: 0s;
@@ -21,96 +21,74 @@ window#waybar.solo {
 .modules-left,
 .modules-center,
 .modules-right {
-  margin: 10px;
-  margin-bottom: 0px;
+  margin: 14px;
+  margin-bottom: 0;
+  margin-top: 4px;
 }
 
 .modules-right {
-  padding: 5px 10px;
-  margin: 5px 5px 0px 0px;
-  border: 1px solid #fff;
-  box-shadow: #fff 0px 0px 0px 0px;
+  box-shadow: #ebbcba 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  color: #fff;
+  color: #e0def4;
   background-color: unset;
-  border: 1px solid #fff;
-  box-shadow: #fff 0px 5px 0px 0px;
-  margin-top: 0px;
-  margin-bottom: 5px;
+  border: 1px solid #ebbcba;
+  box-shadow: #ebbcba 0px 5px 0px 0px;
   transition: 0.1s all ease;
-  color: #fff;
   opacity: 1;
-  margin: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+  margin-top: 4px;
   padding: 0px;
 }
 
-/* 
-CSS provided by Flick0
-more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
-*/
 #workspaces {
   min-height: 45px;
   font-size: 16px;
   margin-bottom: 0px;
   transition: none;
-  color: #fff;
-  margin-bottom: 0px;
+  color: #403d52;
 }
 
 #workspaces button {
   min-width: 40px;
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 1px solid #fff;
-  box-shadow: #fff 0px 0px 0px 0px;
+  border: 1px solid #ebbcba;
+  box-shadow: #ebbcba 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  color: #fff;
+  color: #e0def4;
   background-color: unset;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 
 #workspaces button.active {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 1px solid #fff;
-  box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  color: #fff;
+  color: #e0def4;
   background-color: unset;
-  border: 2px solid #fff;
-  box-shadow: #fff 0px 5px 0px 0px;
+  border: 2px solid #ebbcba;
+  box-shadow: #ebbcba 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #fff;
   opacity: 1;
 }
 
 
-/* #workspaces button.occupied {
-	transition: none;
-	color: #F28FAD;
-	background: transparent;
-	font-size: 4px;
+#workspaces button.occupied {
+  transition: none;
+  color: #e0def4;
+  background: transparent;
+  font-size: 4px;
 }
+
 #workspaces button.focused {
-	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+  color: #e0def4;
+  border-top: 2px solid #ebbcba;
+  border-bottom: 2px solid #ebbcba;
 }
-#workspaces button:hover {
-	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #FAE3B0;
-    border-color: #E8A2AF;
-    color: #E8A2AF;
-}
-#workspaces button.focused:hover {
-    color: #E8A2AF;
-} */
+
 #mode,
 #battery,
 #cpu,
@@ -175,17 +153,13 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
 #custom-spotify {
   padding: 5px 10px;
   margin: 5px 5px 0px 0px;
-  border: 1px solid #fff;
-  box-shadow: #fff 0px 0px 0px 0px;
-  transition: 0.1s all ease;
-  color: #fff;
+  color: #e0def4;
   background-color: unset;
-  border: 2px solid #fff;
-  box-shadow: #fff 0px 5px 0px 0px;
+  border: 2px solid #ebbcba;
+  box-shadow: #ebbcba 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #fff;
   opacity: 1;
   padding-right: 15px;
 }
@@ -196,13 +170,12 @@ more can be read here: https://github.com/Alexays/Waybar/wiki/Module:-Workspaces
   border: 1px solid #fff;
   box-shadow: #fff 0px 0px 0px 0px;
   transition: 0.1s all ease;
-  color: #fff;
+  color: #e0def4;
   background-color: unset;
   box-shadow: #fff 0px 5px 0px 0px;
   margin-top: 0px;
   margin-bottom: 5px;
   transition: 0.1s all ease;
-  color: #fff;
   opacity: 1;
 }
 
