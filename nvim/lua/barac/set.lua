@@ -1,26 +1,29 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+local set = vim.opt
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+set.number = true
+set.relativenumber = true
 
-vim.opt.smartindent = true
-vim.opt.wrap = false
-vim.opt.swapfile = false
-vim.opt.backup = false
+set.tabstop = 2
+set.shiftwidth = 2
+set.softtabstop = 2
+set.smartindent = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true 
+set.wrap = false
 
-vim.opt.termguicolors = true
+set.swapfile = false
+set.backup = false
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+set.hlsearch = false
+set.incsearch = true
 
-vim.opt.updatetime = 50
+set.cursorline = true
+set.signcolumn = "yes"
 
-vim.opt.colorcolumn = "80"
+set.scrolloff = 12
 
-vim.g.mapleader = " "
+set.colorcolumn = "80"
+
+set.termguicolors = true
+set.background = "dark"
+
+vim.opt.fillchars = { eob = " " } -- Enable this for remove the fkn "~"

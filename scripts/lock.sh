@@ -1,1 +1,0 @@
-grim - | wl-copy

@@ -1,0 +1,149 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+$conda\
+$python\
+
+"""
+
+palette = "monochrome"
+
+[palettes.monochrome]
+background = '#ffffff'
+foreground = '#000000'
+
+[directory]
+format = "(fg:foreground)[ $path ]($style)(fg:foreground)"
+style = "bg:background fg:foreground"
+truncation_length = 5
+truncation_symbol = "../"
+
+[directory.substitutions]
+Documents = "󰈙"
+Downloads = " "
+Music = " "
+Pictures = " "
+
+[fill]
+style = "fg:foreground"
+symbol = " "
+
+[git_branch]
+format = "(fg:foreground)[$symbol $branch]($style)(fg:foreground) "
+style = "bg:background fg:foreground"
+symbol = ""
+
+[git_status]
+disabled = false
+style = "bg:background fg:foreground"
+format = '([$all_status$ahead_behind]($style))(fg:foreground) '
+up_to_date = '[✓ ](bg:background fg:foreground)'
+untracked = '[?\($count\)](bg:background fg:foreground)'
+stashed = '[\$](bg:background fg:foreground)'
+modified = '[!\($count\)](bg:background fg:foreground)'
+renamed = '[»\($count\)](bg:background fg:foreground)'
+deleted = '[✘\($count\)](style)'
+staged = '[++\($count\)](bg:background fg:foreground)'
+ahead = '[⇡\(${count}\)](bg:background fg:foreground)'
+diverged = '⇕[\[](bg:background fg:foreground)[⇡\(${ahead_count}\)](bg:background fg:foreground)[⇣\(${behind_count}\)](bg:background fg:foreground)[\]](bg:background fg:foreground)'
+behind = '[⇣\(${count}\)](bg:background fg:foreground)'
+
+[username]
+disabled = true
+format = "(fg:foreground)[$user]($style)(fg:foreground) "
+show_always = true
+style_root = "bg:background fg:iris"
+style_user = "bg:background fg:iris"
+
+# Languages
+
+[c]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[elixir]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[elm]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[golang]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[haskell]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[java]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[julia]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[nodejs]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = "󰎙 "
+
+[nim]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = "󰆥 "
+
+[rust]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = ""
+
+[scala]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = " "
+
+[python]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$version]($style)(fg:foreground) "
+disabled = false
+symbol = ' '
+
+[conda]
+style = "bg:background fg:foreground"
+format = "(fg:foreground)[$symbol$environment]($style)(fg:foreground) "
+disabled = false
+symbol = '🅒 '
