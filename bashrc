@@ -3,6 +3,7 @@
 
 # Comfy settings
 shopt -s autocd
+bind 'set show-all-if-ambiguous on'
 
 # Colors
 alias ls='ls -hN --color=auto --group-directories-first'
@@ -13,19 +14,7 @@ alias grep='grep --color=auto'
 # Short names
 alias vim='nvim'
 
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
-
-# Add scripts path
-export PATH="$HOME/.config/scripts/:$PATH"
-
 # Exec starship
 eval "$(starship init bash)"
-
-# Default applications
-export IMAGE_VIEWER=sxiv
-export EDITOR=nvim
-
-# mental sanity settings
-bind 'set show-all-if-ambiguous on'
 
 PS1='[\u@\h \W]\$ '
