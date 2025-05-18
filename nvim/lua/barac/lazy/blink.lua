@@ -41,11 +41,10 @@ return {
 				TypeParameter = "󰬛",
 			},
 		},
-
 		signature = { enabled = true },
 
 		completion = {
-			documentation = { auto_show = false },
+			documentation = { auto_show = true },
 			list = {
 				selection = {
 					preselect = true,

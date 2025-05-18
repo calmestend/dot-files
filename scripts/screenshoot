@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+export DISPLAY=:0
+FILE="/tmp/$(date +%F-%T | tr ':' '-').png"
+
+copyToClipboard () { 
+		xclip -selection clipboard -t image/png -i $FILE && notify-send -i "$FILE" "Screenshoot copied to clipboard"
+}
+
+case "$1" in
+		full) import -window root "$FILE" && copyToClipboard;;
+		*) import "$FILE" && copyToClipboard;;
+esac

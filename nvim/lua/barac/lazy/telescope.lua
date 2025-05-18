@@ -8,7 +8,7 @@ return {
 
 		telescope.setup({
 			defaults = {
-				file_ignore_patterns = { ".git/", "node_modules/", "vendor/", "android/", "ios/" },
+				file_ignore_patterns = { ".git/", "node_modules/", "vendor/", "android/", "ios/", "@girs/" },
 			},
 		})
 

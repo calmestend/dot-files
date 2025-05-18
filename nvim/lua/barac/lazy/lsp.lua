@@ -48,12 +48,12 @@ return {
 			-- keybind Options
 			local opts = { noremap = true, silent = true, buffer = bufnr }
 			-- Keybinds
-			keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", opts)      -- show definition, references
-			keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", opts)     -- show LSP outine of current buffer
-			keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+			keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", opts)            -- show definition, references
+			keymap.set("n", "go", "<cmd>Lspsaga outline<CR>", opts)           -- show LSP outine of current buffer
+			keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts)   -- see definition and make edits in window
 			keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
 			keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-			keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts)   -- show documentation for what is under cursor
+			keymap.set("n", ";.", "<cmd>Lspsaga hover_doc<CR>", opts)         -- show documentation for what is under cursor
 		end
 
 		--Capabilities With Nvim-CMP
@@ -71,6 +71,7 @@ return {
 			"nixd",
 			"clangd",
 			"intelephense",
+			"gopls"
 		}
 
 		--Servers Setup
@@ -168,6 +169,13 @@ return {
 			on_attach = on_attach,
 			capabilities = capabilities,
 			filetypes = { "php", "blade" },
+		})
+
+		-- Go Setup
+		lsp_config.gopls.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			filetypes = { "go" },
 		})
 	end,
 }
