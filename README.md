@@ -5,7 +5,7 @@
 
 <h2> 🛠 </h2>
 <ul>
-    <li><a href="https://st.suckless.org/">term: st</a></li>
+    <li><a href="https://alacritty.org/">term: alacritty</a></li>
     <li><a href="https://dwm.suckless.org/">wm: dwm</a></li>
     <li><a href="https://starship.rs/">shell prompt: starship</a></li>
     <li><a href="https://www.gnu.org/software/bash/">shell: bash</a></li>
