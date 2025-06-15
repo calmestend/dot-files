@@ -22,8 +22,8 @@ $python\
 palette = "monochrome"
 
 [palettes.monochrome]
-background = '#ffffff'
-foreground = '#000000'
+background = '#000'
+foreground = '#fff'
 
 [directory]
 format = "(fg:foreground)[ $path ]($style)(fg:foreground)"
@@ -32,10 +32,10 @@ truncation_length = 5
 truncation_symbol = "../"
 
 [directory.substitutions]
-Documents = "󰈙"
 Downloads = " "
-Music = " "
-Pictures = " "
+music = " "
+personal = " "
+work = " "
 
 [fill]
 style = "fg:foreground"

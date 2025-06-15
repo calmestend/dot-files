@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "Iosevka Nerd Font:pixelsize=14:antialias=true:autohint=true";
+    "Iosevka Nerd Font:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 4;
 
 /*
@@ -38,8 +38,8 @@ static float chscale = 1.0;
 wchar_t *worddelimiters = L" ";
 
 /* selection timeouts (in milliseconds) */
-static unsigned int doubleclicktimeout = 300;
-static unsigned int tripleclicktimeout = 600;
+static unsigned int doubleclicktimeout = 100;
+static unsigned int tripleclicktimeout = 300;
 
 /* alt screens */
 int allowaltscreen = 1;
@@ -127,7 +127,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 4;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers

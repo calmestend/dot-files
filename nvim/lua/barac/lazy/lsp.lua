@@ -60,6 +60,7 @@ return {
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		local servers = {
+			"htmx",
 			"html",
 			"ts_ls",
 			"lua_ls",
@@ -71,7 +72,8 @@ return {
 			"nixd",
 			"clangd",
 			"intelephense",
-			"gopls"
+			"gopls",
+			"templ"
 		}
 
 		--Servers Setup
@@ -129,11 +131,18 @@ return {
 			filetypes = { "html" },
 		})
 
+		-- Htmx Setup
+		lsp_config.htmx.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			filetypes = { "html" },
+		})
+
 		-- Emmet Setup
 		lsp_config.emmet_ls.setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
-			filetypes = { "html" },
+			filetypes = { "html", "templ" },
 		})
 
 		-- Zig Setup
@@ -175,7 +184,14 @@ return {
 		lsp_config.gopls.setup({
 			on_attach = on_attach,
 			capabilities = capabilities,
-			filetypes = { "go" },
+			filetypes = { "go", "templ" },
+		})
+
+		-- Templ Setup
+		lsp_config.templ.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			filetypes = { "templ" },
 		})
 	end,
 }
