@@ -24,6 +24,9 @@ set.scrolloff = 12
 set.colorcolumn = "80"
 
 set.termguicolors = true
-set.background = "dark"
+set.background = "light"
+
+-- vim.opt.spell = true
+-- vim.opt.spelllang = "en_us"
 
 vim.opt.fillchars = { eob = " " } -- Enable this for remove the fkn "~"
