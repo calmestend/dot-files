@@ -24,7 +24,7 @@ set.scrolloff = 12
 set.colorcolumn = "80"
 
 set.termguicolors = true
-set.background = "light"
+set.background = "dark"
 
 -- vim.opt.spell = true
 -- vim.opt.spelllang = "en_us"

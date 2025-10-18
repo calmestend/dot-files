@@ -74,6 +74,7 @@ return {
 			"gopls",
 			"templ",
 			"tinymist",
+			"omnisharp",
 		}
 
 		--Servers Setup
@@ -199,6 +200,14 @@ return {
 			on_attach = on_attach,
 			capabilities = capabilities,
 			filetypes = { "typ" },
+		})
+
+		-- C# Setup
+		lsp_config.omnisharp.setup({
+			on_attach = on_attach,
+			capabilities = capabilities,
+			cmd = { "OmniSharp", "-z", "--hostPID", tostring(vim.fn.getpid()), "--languageserver" },
+			filetypes = { "cs" },
 		})
 	end,
 }
