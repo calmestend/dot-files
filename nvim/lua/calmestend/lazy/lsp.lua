@@ -45,6 +45,10 @@ return {
             capabilities = capabilities,
         })
 
+        vim.lsp.config("ts_ls", {
+            capabilities = capabilities,
+        })
+
         vim.lsp.config("tailwindcss", {
             capabilities = capabilities,
             filetypes = {
@@ -79,7 +83,8 @@ return {
             "nixd",
             "tailwindcss",
             "zls",
-						"qmlls"
+						"qmlls",
+						"ts_ls"
         })
 
         vim.g.zig_fmt_parse_errors = 0
