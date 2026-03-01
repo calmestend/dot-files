@@ -64,7 +64,7 @@ return {
 				map({"n", "x"}, "<leader>ca", vim.lsp.buf.code_action, "Code Action", client.supports_method("textDocument/codeAction"))
 				map({"n", "x"}, "<leader>cc", vim.lsp.codelens.run, "Run Codelens", client.supports_method("textDocument/codeLens"))
 				map("n", "<leader>cC", vim.lsp.codelens.refresh, "Refresh & Display Codelens", client.supports_method("textDocument/codeLens"))
-				map("n", "<leader>cr", vim.lsp.buf.rename, "Rename", client.supports_method("textDocument/rename"))
+				map("n", "<leader>rn", vim.lsp.buf.rename, "Rename", client.supports_method("textDocument/rename"))
 
 			end,
 		})
@@ -73,6 +73,7 @@ return {
 			{ 
 				"lua_ls", 
 				"gopls", 
+				"kulala",
 			}
 		)
 	end,
