@@ -73,7 +73,10 @@ return {
 			{ 
 				"lua_ls", 
 				"gopls", 
+				"zls", 
+				"ts_ls", 
 				"kulala",
+				"clangd",
 			}
 		)
 	end,

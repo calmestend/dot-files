@@ -1,0 +1,51 @@
+[mgr]
+cwd = { fg = "white" }
+preview_hovered = { reversed = true }
+border_symbol = " "
+
+[indicator]
+preview = { reversed = true }
+padding = { open = "█", close = "█" }
+
+[status]
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+perm_type = { fg = "reset" }
+perm_read = { fg = "reset" }
+perm_write = { fg = "reset" }
+perm_exec = { fg = "reset" }
+perm_sep = { fg = "darkgray" }
+
+[mode]
+normal_main = { bg = "darkgray", bold = true }
+select_main = { bg = "cyan", bold = true }
+
+[cmp]
+icon_file = ""
+icon_folder = ""
+icon_command = ""
+
+[filetype]
+rules = [
+  { url = "*/", is = "orphan", fg = "red", bold = true },
+  { url = "*/", is = "link", fg = "cyan", bold = true },
+  { url = "*/", is = "sticky", fg = "blue", italic = true, bold = true },
+  { url = "*/", fg = "blue", bold = true },
+  { url = "*", is = "orphan", fg = "red" },
+  { url = "*", is = "link", fg = "cyan" },
+  { url = "*", is = "exec", fg = "lightgreen" },
+  { url = "*", is = "block", fg = "yellow" },
+  { url = "*", is = "char", fg = "yellow" },
+  { url = "*", is = "fifo", fg = "magenta" },
+  { url = "*", is = "sock", fg = "magenta" },
+  { url = "*", is = "sticky", italic = true },
+  { mime = "inode/x-empty", fg = "darkgray" },
+]
+
+[icon]
+globs = []
+dirs = []
+files = []
+exts = []
+conds = []
